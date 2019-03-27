@@ -1,0 +1,142 @@
+body {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(oofmegascene4.gif);
+    background-color: black;
+}
+
+#monCanvas{
+	display: block;
+	margin: 0px auto;
+	margin-top: 60px;
+	border: 5px solid black;
+}
+
+#monCanvas:hover {
+	cursor: none;
+}
+
+#offset {
+	width: 100%;
+}
+
+#victoire {
+	display: none;
+	width: 300px;
+	height: 170px;
+	z-index: 2;
+	position: absolute;
+	top:400px;
+}
+
+#boss {
+	position: relative;
+	width: 400px;
+	height: 220px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-image: url(boss.gif);
+	background-position: center;
+	background-size: cover;
+}
+
+#hpbar {
+	border: 1px solid black;
+	margin: 0 auto;
+	display: block;
+	width: 400px;
+	max-width:400px; 
+	height: 20px;
+	background-color: red;
+}
+
+#bossinfo {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#bossname {
+	margin : 10px auto;
+	font-weight: bold;
+	font-size: 30px;
+	color:white;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+#realhp {
+	color:#ef4040;
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 30px;
+	font-style: italic;
+}
+
+#shield {
+	color: #3083ff;
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 30px;
+	font-style: italic;
+}
+
+#hp100 {
+	display: none;
+	top : 100px;
+	left : 100px;
+	position: absolute;
+	z-index: 2;
+	background-image: url(100hp.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 80px;
+}
+
+#shield1 {
+	display: none;
+	top : 0px;
+	left : 0px;
+	position: absolute;
+	z-index: 2;
+	background-image: url(1shield.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 80px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+	body {
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#boss {
+	width: 356px;
+	height: 200px;
+	margin-top:0px;
+}
+#bossname {
+	font-size: 26px;
+}
+#realhp {
+	font-size: 28px;
+}
+#shield {
+	font-size: 28px;
+}
+#monCanvas {
+	margin-top: -20px;
+}
+#victoire {
+	top:470px;
+}
+#hpbar {
+	height: 18px;
+	margin-bottom: 10px;
+}
+}
